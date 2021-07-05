@@ -1,0 +1,748 @@
+html, body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    overflow: hidden;
+}
+
+/*CÁI NÀY LÀ DES HEADER*/
+/*CÁI NÀY LÀ DES HEADER*/
+/*CÁI NÀY LÀ DES HEADER*/
+/*CÁI NÀY LÀ DES HEADER*/
+/*CÁI NÀY LÀ DES HEADER*/
+/*CÁI NÀY LÀ DES HEADER*/
+.header {
+    position: absolute;
+    height: 10vh;
+    width: 98vw;
+    display: flex;
+    margin: 2vh 1vw 0 1vw;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 2;
+}
+
+@keyframes rotateicon {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/*CÁI NÀY LÀ DES HEADER-RIGHT*/
+/*CÁI NÀY LÀ DES HEADER-RIGHT*/
+/*CÁI NÀY LÀ DES HEADER-RIGHT*/
+/*CÁI NÀY LÀ DES HEADER-RIGHT*/
+/*CÁI NÀY LÀ DES HEADER-RIGHT*/
+/*CÁI NÀY LÀ DES HEADER-RIGHT*/
+#header-right {
+    border: solid 3px black;
+    display: flex;
+}
+
+.header-button-right {
+    width: 13vh;
+    height: 5vh;
+    color: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 0 2vh 0 2vh;
+    font-size: 3vh;
+    font-family: Abel;
+    position: relative;
+}
+.fake-border-right-up{
+    position: absolute;
+    top: 0vh;
+    left: 0;
+    height: 2px;
+    width: 0vh;
+    background-color: black;
+}
+.fake-border-right-bottom{
+    position: absolute;
+    bottom: 0vh;
+    right: 0;
+    height: 2px;
+    width: 0vh;
+    background-color: black;
+}
+.fake-border-right-sideleft{
+    position: absolute;
+    top: 0vh;
+    left: 0;
+    height: 0;
+    width: 2px;
+    background-color: black;
+}
+.fake-border-right-sideright{
+    position: absolute;
+    bottom: 0vh;
+    right: 0;
+    height: 0;
+    width: 2px;
+    background-color: black;
+}
+
+#logo-text-right {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    top: 6.3vh;
+    left: 4.4vw;
+    font-size: 3vh;
+    font-family: Abel;
+    color: black;
+    cursor: pointer;
+}
+#logo-right{
+    height: 6.5vh;
+    width: auto;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    left: 5.1vw;
+    top: 0.5vh;
+    cursor: pointer;
+}
+.header-logo:hover {
+    animation: rotateicon 0.7s;
+}
+
+/*CÁI NÀY LÀ DES HEADER-LEFT*/
+/*CÁI NÀY LÀ DES HEADER-LEFT*/
+/*CÁI NÀY LÀ DES HEADER-LEFT*/
+/*CÁI NÀY LÀ DES HEADER-LEFT*/
+/*CÁI NÀY LÀ DES HEADER-LEFT*/
+/*CÁI NÀY LÀ DES HEADER-LEFT*/
+#header-left {
+    border: solid 3px white;
+    display: none;
+}
+
+.header-button-left {
+    width: 13vh;
+    height: 5vh;
+    color: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 0 2vh 0 2vh;
+    font-size: 3vh;
+    font-family: Abel;
+    position: relative;
+    color: white;
+}
+.fake-border-left-up{
+    position: absolute;
+    top: 0vh;
+    left: 0;
+    height: 2px;
+    width: 0vh;
+    background-color: white;
+}
+.fake-border-left-bottom{
+    position: absolute;
+    bottom: 0vh;
+    right: 0;
+    height: 2px;
+    width: 0vh;
+    background-color:white;
+}
+.fake-border-left-sideleft{
+    position: absolute;
+    top: 0vh;
+    left: 0;
+    height: 0;
+    width: 2px;
+    background-color: white;
+}
+.fake-border-left-sideright{
+    position: absolute;
+    bottom: 0vh;
+    right: 0;
+    height: 0;
+    width: 2px;
+    background-color: white;
+}
+
+#logo-text-left {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    top: 6.3vh;
+    left: 4.4vw;
+    font-size: 3vh;
+    font-family: Abel;
+    color: white;
+    cursor: pointer;
+}
+#logo-left{
+    height: 6.5vh;
+    width: auto;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    left: 5.1vw;
+    top: 0.5vh;
+    cursor: pointer;
+}
+
+
+/*CÁI NÀY LÀ DES HEADER-bottom*/
+/*CÁI NÀY LÀ DES HEADER-bottom*/
+/*CÁI NÀY LÀ DES HEADER-bottom*/
+/*CÁI NÀY LÀ DES HEADER-bottom*/
+/*CÁI NÀY LÀ DES HEADER-bottom*/
+/*CÁI NÀY LÀ DES HEADER-bottom*/
+
+#header-bottom {
+    border: solid 3px black;
+    display: none;
+}
+
+.header-button-bottom {
+    width: 13vh;
+    height: 5vh;
+    color: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 0 2vh 0 2vh;
+    font-size: 3vh;
+    font-family: Abel;
+    position: relative;
+    color: black;
+}
+.fake-border-bottom-up{
+    position: absolute;
+    top: 0vh;
+    left: 0;
+    height: 2px;
+    width: 0vh;
+    background-color: black;
+}
+.fake-border-bottom-bottom{
+    position: absolute;
+    bottom: 0vh;
+    right: 0;
+    height: 2px;
+    width: 0vh;
+    background-color:black;
+}
+.fake-border-bottom-sideleft{
+    position: absolute;
+    top: 0vh;
+    left: 0;
+    height: 0;
+    width: 2px;
+    background-color: black;
+}
+.fake-border-bottom-sideright{
+    position: absolute;
+    bottom: 0vh;
+    right: 0;
+    height: 0;
+    width: 2px;
+    background-color: black;
+}
+
+#logo-text-bottom {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    top: 6.3vh;
+    left: 4.4vw;
+    font-size: 3vh;
+    font-family: Abel;
+    color: black;
+    cursor: pointer;
+}
+#logo-bottom{
+    height: 6.5vh;
+    width: auto;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    left: 5.1vw;
+    top: 0.5vh;
+    cursor: pointer;
+}
+
+/*CÁI NÀY DES MAIN VÀ TEXT*/
+/*CÁI NÀY DES MAIN VÀ TEXT*/
+/*CÁI NÀY DES MAIN VÀ TEXT*/
+/*CÁI NÀY DES MAIN VÀ TEXT*/
+/*CÁI NÀY DES MAIN VÀ TEXT*/
+/*CÁI NÀY DES MAIN VÀ TEXT*/
+#right {
+    position: static;
+    height: 100vh;
+    width: 100vw;
+    right: 0vw;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    display: flex;
+}
+#left {
+    position: static;
+    height: 100vh;
+    width: 0vw;
+    left: 0vh;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    display: flex;
+    background-image: url(https://i.imgur.com/Laj3jf3.jpg);
+    background-position-x: 60vh;
+    background-position-y: 10vh;
+    background-repeat: no-repeat;
+    background-size: 85vh;
+}
+
+.main-title {
+    margin: 0;
+    padding: 0;
+    height: 23vh;
+    width: 42vw;
+    position: absolute;
+    bottom: 40vh;
+    font-size: 22vh;
+    font-family: Barlow;
+    font-weight: bold;
+    cursor: context-menu;
+    text-align: left;
+}
+#right-title {
+    color: black;
+    right: 0;
+    margin-right: 10vh;
+}
+#left-title {
+    right: 0;
+    margin-right: 10vh;
+    color: white;
+    display: none;
+}
+
+.control {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    height: 5vh;
+    width: 20vh;
+    top: 25vh;
+    left: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#control-right {
+    display: flex;
+}
+.control-button-right {
+    width: 9vh;
+    font-size: 3vh;
+    height: 5vh;
+    font-family: Abel;
+    cursor: pointer;
+    color: none;
+    background: none;
+    border: none;
+    position: relative;
+    color: black;
+}
+.control-button-right:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0vh;
+    content: "";
+    display: block;
+    height: 3px;
+    left: 50%;
+    position: absolute;
+    background: black;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+.control-button-right:hover:after { 
+    width: 100%; 
+    left: 0%; 
+}
+
+#control-left {
+    display: none;
+}
+.control-button-left {
+    width: 9vh;
+    font-size: 3vh;
+    height: 5vh;
+    font-family: Abel;
+    cursor: pointer;
+    color: none;
+    background: none;
+    position: relative;
+    border: none;
+    color: white;
+}
+.control-button-left:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0vh;
+    content: "";
+    display: block;
+    height: 3px;
+    left: 50%;
+    position: absolute;
+    background: white;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+.control-button-left:hover:after { 
+    width: 100%; 
+    left: 0%; 
+}
+
+.text-bio {
+    position: relative;
+    background-color: none;
+    padding: 0;
+    margin: 0;
+    height: 40vh;
+    width: 50vh;
+    top: 65vh;
+    left: 15vh;
+    text-align: left;
+    cursor: context-menu;
+}
+#name {
+    font-family: Abel;
+    font-size: 7vh;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+#school {
+    font-family: Abel;
+    font-size: 2.5vh;
+    margin: 3vh 0 0 0;
+    padding: 0;
+}
+#mail {
+    font-family: Abel;
+    font-size: 2.5vh;
+    margin: 3vh 0 0 0;
+    padding: 0;
+    text-decoration: underline;
+}
+/* CÁI NÀY DES BÊN PHẢI MÀ CÓ ICON*/
+/* CÁI NÀY DES BÊN PHẢI MÀ CÓ ICON*/
+/* CÁI NÀY DES BÊN PHẢI MÀ CÓ ICON*/
+/* CÁI NÀY DES BÊN PHẢI MÀ CÓ ICON*/
+/* CÁI NÀY DES BÊN PHẢI MÀ CÓ ICON*/
+/* CÁI NÀY DES BÊN PHẢI MÀ CÓ ICON*/
+.icon {
+    position: relative;
+    background-color: none;
+    height: 10vh;
+    width: 60vh;
+    left: 110vh;
+    top: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transform-origin: 50% 50%;
+}
+.icon a {
+    display: inline-block;
+    width: 10vh;
+    height: 10vh;
+    margin: 0 0.3vh 0 0.3vh;
+    text-align: center;
+    background: #262626;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: 0.3s;
+    transform-origin: 50% 50%;
+}
+.icon a .fa {
+    line-height: 10vh;
+    font-size: 4vh;
+    transform-origin: 50% 50%;
+}
+
+#fb:hover {
+    background: blue;
+    animation: rotateicon 0.7s; 
+}
+#yt:hover {
+    background: red;
+    animation: rotateicon 0.7s;
+}
+#ins:hover {
+    background: #F1CC01 linear-gradient(45deg, #F1CC01, #EE0610, #7B39AC); 
+    animation: rotateicon 0.7s;
+}
+#twt:hover {
+    background: #1C9CEA;
+    animation: rotateicon 0.7s;
+}
+
+
+/*CÁI NÀY DES BÊN TRÁI CỦA TEXT*/
+/*CÁI NÀY DES BÊN TRÁI CỦA TEXT*/
+/*CÁI NÀY DES BÊN TRÁI CỦA TEXT*/
+/*CÁI NÀY DES BÊN TRÁI CỦA TEXT*/
+/*CÁI NÀY DES BÊN TRÁI CỦA TEXT*/
+/*CÁI NÀY DES BÊN TRÁI CỦA TEXT*/
+.text-name {
+    color: white;
+    background-color: none;
+    padding: 0;
+    margin: 0;
+    height: 30vh;
+    width: 48vh;
+    position: relative;
+    top: 30vh;
+    left: 63vh;
+    font-family: Abel;
+    font-size: 4vh;
+    font-style: italic;
+}
+
+/*CÁI NÀY LÀ DES Bottom*/
+/*CÁI NÀY LÀ DES Bottom*/
+/*CÁI NÀY LÀ DES Bottom*/
+/*CÁI NÀY LÀ DES Bottom*/
+/*CÁI NÀY LÀ DES Bottom*/
+/*CÁI NÀY LÀ DES Bottom*/
+.bottom {
+    padding: 0;
+    margin: 0vh;
+    height: 0vh;
+    width: 100vw;
+    bottom: 0;
+    position: absolute;
+    background-color: #E1E1E1;
+    overflow: hidden;
+    z-index: 1;
+}
+#getintouch {
+    height: 24vh;
+    width: 130vh;
+    padding: 0;
+    margin: 0 0 0 0;
+    position: relative;
+    top: 20vh;
+    left: 30vh;
+    font-size: 24vh;
+    font-family: Advent Pro;
+    font-weight: bold;
+    cursor: context-menu;
+}
+
+/*CÁI NÀY LÀ DES Mail cacs thuws*/
+/*CÁI NÀY LÀ DES Mail cacs thuws*/
+/*CÁI NÀY LÀ DES Mail cacs thuws*/
+/*CÁI NÀY LÀ DES Mail cacs thuws*/
+/*CÁI NÀY LÀ DES Mail cacs thuws*/
+/*CÁI NÀY LÀ DES Mail cacs thuws*/
+.contact-info {
+    padding: 0;
+    margin: 0;
+    background-color: none;
+    height: 35vh;
+    width: 55vh;
+    text-align: left;
+    position: relative;
+    top: 35vh;
+    left: 25vh;
+}
+.contact-info-element {
+    padding: 0;
+    height: auto;
+    margin: 1vh 0 0 0;
+    font-size: 3vh;
+    font-family: Abel;
+    cursor: pointer;
+    position: relative;
+}
+.contact-info-element:after {    
+    background: none repeat scroll 0 0;
+    bottom: 0px;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 100%;
+    position: absolute;
+    background: black;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+.contact-info-element:hover:after { 
+    width: 100%; 
+    left: 0%; 
+}
+#online {
+    font-weight: bolder;
+    cursor: context-menu;
+    padding: 0;
+    margin: 0;
+    font-size: 3vh;
+    font-family: Abel;
+    position: relative;
+    text-decoration-color: black;
+}
+#mail-bottom {
+    width: 51vh;
+}
+#facebook {
+    width: 12.5vh;
+}
+#instagram {
+    width: 13vh;
+}
+#twitter {
+    width: 9vh;
+}
+#youtube {
+    width: 10.5vh;
+}
+#phone {
+    width: 33.5vh;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+/*CÁI NÀY LÀ DES currently cacs thuws*/
+/*CÁI NÀY LÀ DES currently cacs thuws*/
+/*CÁI NÀY LÀ DES currently cacs thuws*/
+/*CÁI NÀY LÀ DES currently cacs thuws*/
+/*CÁI NÀY LÀ DES currently cacs thuws*/
+/*CÁI NÀY LÀ DES currently cacs thuws*/
+
+.contact-place {
+    padding: 0;
+    background-color: none;
+    height: 20vh;
+    width: 55vh;
+    text-align: right;
+    position: relative;
+    top: 0vh;
+    left: 80vh;
+    cursor: context-menu;
+}
+.contact-place-element {
+    padding: 0;
+    margin: 0;
+    font-size: 3vh;
+    font-family: Abel;
+    margin: 1vh 0 0 0;
+}
+
+
+#currently {
+    font-weight: bolder;
+    margin: 0;
+    
+}
+
+/*CÁI NÀY LÀ exit*/
+/*CÁI NÀY LÀ exit*/
+/*CÁI NÀY LÀ exit*/
+/*CÁI NÀY LÀ exit*/
+/*CÁI NÀY LÀ exit*/
+/*CÁI NÀY LÀ exit*/
+#exit {
+    position: relative;
+    top: -65vh;
+    left: 90vw;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    width: 8vh;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8vh;
+    transform-origin: 50% 50%;
+}
+
+#iconexit {
+    transition: 0.4s;
+    width: 8vh;
+    height: 8vh;
+    transform-origin: 50% 50%;
+}
+
+#iconexit:hover {
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+
+/* des animation */
+/* des animation */
+/* des animation */
+/* des animation */
+/* des animation */
+
+/* #animation-land-1 {
+    width: 300vw;
+    height: 0.7vh;
+    position: absolute;
+    transform: rotate(25deg);
+    background-color: black;
+    z-index: 2;
+    top: 71.5vh;
+    left: -175vh;
+    display: flex;
+    z-index: 200;
+} */
+
+@keyframes ballrun1{
+    0% {
+        top: 25vh;
+        left: -15vw;
+        transform:rotate(0deg);
+    }
+    80% {
+        top: 85vh;
+        left: 120vw;
+        transform:rotate(1500deg);
+    }
+    100% {
+        top: 100vh;
+        left: 1000vh;
+        transform:rotate(1500deg);
+    }
+
+}
+#animation-ball-1 {
+    position: absolute;
+    z-index: 0;
+    height: 23vh;
+    width: 23vh;
+    background-image: url(ball.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+
+    animation-name: ballrun1;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+    z-index: 100;
+}

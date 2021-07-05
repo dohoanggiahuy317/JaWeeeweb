@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/home1.css">
+    <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Barlow' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Darker Grotesque' rel='stylesheet'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>JaWeee-Home</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+    <div class="header" id="header-home">
+        <div class="header-change-color" id="changecolor"></div>
+        <a href="index.html"><img class="header-logo" id="logo-home" src="https://i.imgur.com/tW02d1q.png"></a>
+        <p class="header-logo-text" id="logo-text-home">JaWeee</p>
+        <a href="index.html"><button class="header-button-home" id="welcome-home">Welcome
+            <div class="fake-border-up" id="fake-welcome-up"></div>
+            <div class="fake-border-bottom" id="fake-welcome-bottom"></div>
+            <div class="fake-border-sideleft" id="fake-welcome-sideleft"></div>
+            <div class="fake-border-sideright" id="fake-welcome-sideright"></div>
+        </button></a>
+        <a href="home1.html"><button class="header-button-home" id="home-home">Home
+            <div class="fake-border-up" id="fake-home-up"></div>
+            <div class="fake-border-bottom" id="fake-home-bottom"></div>
+            <div class="fake-border-sideleft" id="fake-home-sideleft"></div>
+            <div class="fake-border-sideright" id="fake-home-sideright"></div>
+        </button></a>
+        <a href="gallery1.html"><button class="header-button-home" id="gallery-home">Gallery
+            <div class="fake-border-up" id="fake-gallery-up"></div>
+            <div class="fake-border-bottom" id="fake-gallery-bottom"></div>
+            <div class="fake-border-sideleft" id="fake-gallery-sideleft"></div>
+            <div class="fake-border-sideright" id="fake-gallery-sideright"></div>
+        </button></a>
+        <button class="header-button-home" id="contact-home">Contact
+            <div class="fake-border-up" id="fake-contact-up"></div>
+            <div class="fake-border-bottom" id="fake-contact-bottom"></div>
+            <div class="fake-border-sideleft" id="fake-contact-sideleft"></div>
+            <div class="fake-border-sideright" id="fake-contact-sideright"></div>
+        </button>
+    </div>
+
+    <div class="home-main" id="home-main">
+        <div class="home-element" id="earth">
+            <div class="element-container" id="container-earth">
+                <div class="element-bg" id="earth-bg-out">
+                    <div id="earth-bg"></div>
+                </div>
+                <!-- <div class="element-bg-cover" id="earth-bg-cover"></div> -->
+                <a href="galleryearth.html"><p class="element-text" id="text-earth">Earth</p></a>
+                <div class="stick" id="stick-earth"></div>
+                <div class="explore" id="explore1">
+                    <p class="explore-number" id="explore-earth-number">01</p>
+                    <p class="explore-text" id="explore-earth-text">Explore</p>
+                </div>
+            </div>
+            <div class="page-number" id="page-number1">1-5</div>
+        </div>
+
+        <div class="home-element" id="wood">
+            <div class="element-container" id="container-wood">
+                <div class="element-bg" id="wood-bg-out">
+                    <div id="wood-bg"></div>
+                </div>
+                <a href="gallerywood.html"><p class="element-text" id="text-wood">Wood</p></a>
+                <div class="stick" id="stick-wood"></div>
+                <div class="explore" id="explore2">
+                    <p class="explore-number" id="explore-wood-number">02</p>
+                    <p class="explore-text" id="explore-wood-text">Explore</p>
+                </div>
+            </div>
+            <div class="page-number" id="page-number2">2-5</div>
+        </div>
+
+        <div class="home-element" id="water">
+            <div class="element-container" id="container-water">
+                <div class="element-bg" id="water-bg-out">
+                    <div id="water-bg"></div>
+                </div>
+                <a href="gallerywater.html"><p class="element-text" id="text-water">Water</p></a>
+                <div class="stick" id="stick-water"></div>
+                <div class="explore" id="explore3">
+                    <p class="explore-number" id="explore-water-number">03</p>
+                    <p class="explore-text" id="explore-water-text">Explore</p>
+                </div>
+            </div>
+            <div class="page-number" id="page-number3">3-5</div>
+        </div>
+
+        <div class="home-element" id="fire">
+            <div class="element-container" id="container-fire">
+                <div class="element-bg" id="fire-bg-out">
+                    <div id="fire-bg"></div>
+                </div>
+                <a href="galleryfire.html"><p class="element-text" id="text-fire">Fire</p></a>
+                <div class="stick" id="stick-fire"></div>
+                <div class="explore" id="explore4">
+                    <p class="explore-number" id="explore-fire-number">04</p>
+                    <p class="explore-text" id="explore-fire-text">Explore</p>
+                </div>
+            </div>
+            <div class="page-number" id="page-number4">4-5</div>
+        </div>
+
+        <div class="home-element" id="metal">
+            <div class="element-container" id="container-metal">
+                <div class="element-bg" id="metal-bg-out">
+                    <div id="metal-bg"></div>
+                </div>
+                <a href="gallerymetal.html"><p class="element-text" id="text-metal">Metal</p></a>
+                <div class="stick" id="stick-metal"></div>
+                <div class="explore" id="explore5">
+                    <p class="explore-number" id="explore-metal-number">05</p>
+                    <p class="explore-text" id="explore-metal-text">Explore</p>
+                </div>
+            </div>
+            <div class="page-number" id="page-number5">5-5</div>
+        </div>
+    </div>
+    <div class="small-name-title" id="small-name-title">JaWeee</div>
+    <div class="inspired" id="inspired">Inspired by Ben Mingo</div>
+
+
+    <div class="bottom" id="contact-page">
+        <p class="title-bottom" id="getintouch">Get in touch</p>
+        <div class="contact-info" id="contact-info">
+            <p class="contact-info-element-title" id="online">ONLINE</p>
+            <p class="contact-info-element" id="mail-bottom">Mail: dohoanggiahuy310703@gmail.com</p>
+            <a href="https://www.facebook.com/huy.dohoanggia"><p class="contact-info-element" id="facebook">Facebook</p></a>
+            <a href="https://www.instagram.com/ja_weee_31703/?hl=vi"><p class="contact-info-element" id="instagram">Instagram</p></a>
+            <a href="https://twitter.com/DoHoangGiaHuy3"><p class="contact-info-element" id="twitter">Twitter</p></a>
+            <a href="https://www.youtube.com/channel/UCAfIIeE37lOoeJFQMlCNDDw?view_as=subscriber"><p class="contact-info-element" id="youtube">YouTube</p></a>
+            <p class="contact-info-element" id="phone">Phone (VIE): 091 1526798</p>
+        </div>
+        <div class="contact-place" id="contact-place">
+            <p class="contact-place-element" id="currently">Currently</p>
+            <p class="contact-place-element" id="live">Living in Hanoi, Vietnam</p>
+        </div>
+        <div class="exit" id="exit"><i id="iconexit" class="fa fa-times" aria-hidden="true"></i></div>
+    </div>
+
+    <div class="spacer s0" id="trigger"></div>
+    <div id="target">
+        <img id="plane" src="img/plane.png">
+    </div>
+
+
+
+
+
+    <svg>
+        <filter id="turbulence" x="0" y="0" width="100%" height="100%">
+          <feTurbulence id="sea-filter" numOctaves="5" seed="2" baseFrequency="0.01"></feTurbulence>
+          <feDisplacementMap scale="20" in="SourceGraphic"></feDisplacementMap>
+          <animate xlink:href="#sea-filter" attributeName="baseFrequency" dur="30s" keyTimes="0;0.5;1" values="0.02 ;0.05; 0.02" repeatCount="indefinite"/>
+        </filter>
+    </svg>
+
+    <script src="js/home1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+</body>
+</html>

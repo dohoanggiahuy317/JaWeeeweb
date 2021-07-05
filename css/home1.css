@@ -1,0 +1,574 @@
+hhtml, body {
+    height: 500vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    overflow-x: hidden;
+}
+/*CÁI NÀY LÀ DES HEADER*/
+/*CÁI NÀY LÀ DES HEADER*/
+/*CÁI NÀY LÀ DES HEADER*/
+/*CÁI NÀY LÀ DES HEADER*/
+/*CÁI NÀY LÀ DES HEADER*/
+/*CÁI NÀY LÀ DES HEADER*/
+.header {
+    position: fixed;
+    top: 0vh;
+    height: 10vh;
+    width: 98vw;
+    display: flex;
+    margin: 2vh 1vw 0 1vw;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 999;
+    background-color: white;
+}
+
+#header-home {
+    border: solid 3px black;
+    display: flex;
+}
+
+.header-button-home {
+    width: 13vh;
+    height: 5vh;
+    color: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 0 2vh 0 2vh;
+    font-size: 3vh;
+    font-family: Abel;
+    position: relative;
+}
+
+@keyframes rotateicon {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#logo-text-home {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    top: 6.3vh;
+    left: 4.4vw;
+    font-size: 3vh;
+    font-family: Abel;
+    color: black;
+    cursor: pointer;
+}
+#logo-home{
+    height: 6.5vh;
+    width: auto;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    left: 5.1vw;
+    top: 0.5vh;
+    cursor: pointer;
+}
+.header-logo:hover {
+    animation: rotateicon 0.7s;
+}
+
+#changecolor {
+    position: absolute;
+    height: 10vh;
+    width: 0vw;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background-color: #e2e2e2;
+}
+
+.fake-border-up{
+    position: absolute;
+    top: 0vh;
+    left: 0;
+    height: 2px;
+    width: 0vh;
+    background-color: black;
+}
+.fake-border-bottom{
+    position: absolute;
+    bottom: 0vh;
+    right: 0;
+    height: 2px;
+    width: 0vh;
+    background-color: black;
+}
+.fake-border-sideleft{
+    position: absolute;
+    top: 0vh;
+    left: 0;
+    height: 0;
+    width: 2px;
+    background-color: black;
+}
+.fake-border-sideright{
+    position: absolute;
+    bottom: 0vh;
+    right: 0;
+    height: 0;
+    width: 2px;
+    background-color: black;
+}
+
+/*DES MAIN CAC ELEMENT*/
+/*DES MAIN CAC ELEMENT*/
+/*DES MAIN CAC ELEMENT*/
+/*DES MAIN CAC ELEMENT*/
+/*DES MAIN CAC ELEMENT*/
+/*DES MAIN CAC ELEMENT*/
+.home-main{
+    position: static;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    height: 500vh;
+    width: 100vw;
+}
+
+.home-element {
+    position: static;
+    padding: 0;
+    margin: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+/*Des từng cái element*/
+/*Des từng cái element*/
+/*Des từng cái element*/
+/*Des từng cái element*/
+/*Des từng cái element*/
+/*Des từng cái element*/
+
+.element-container {
+    position: relative;
+    background-color: none;
+    height: 65vh;
+    width: 65vw;
+    overflow: hidden;
+    left: 10vh;
+}
+
+.element-bg {
+    position: relative;
+    height: 65vh;
+    width: 35vw;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.element-text {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    width: auto;
+    height: 24vh;
+    font-family: Cinzel;
+    font-size: 24vh;
+    color: #000000;
+    top: 20vh;
+    left: 25vh;
+    font-weight: 0.3vh;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: top;
+    font-weight: 900;
+    z-index: 100;
+}
+#text-earth:hover{color: rgb(13, 116, 13);}
+#text-wood:hover{color: rgb(128, 55, 22);}
+#text-water:hover{color: rgb(80, 203, 252);}
+#text-fire:hover{color: rgb(221, 97, 15);}
+#text-metal:hover{color: gold}
+
+.page-number {
+    position: relative;
+    font-size: 6vh;
+    font-family: Darker Grotesque;
+    font-weight: 2vh;
+    top: -25vh;
+    left: -72vw;
+    cursor: context-menu;
+}
+
+#earth-bg {
+    background-image: url(https://i.imgur.com/gw8lfhk.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: url("#turbulence");
+    opacity: 0.8;
+    width: 105%;
+    height: 105%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1.5vh;
+    top: -2vh;
+}
+#wood-bg {
+    background-image: url(https://i.imgur.com/GBTCOSP.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: url("#turbulence");
+    opacity: 0.8;
+    width: 105%;
+    height: 105%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1.5vh;
+    top: -2vh;
+}
+#water-bg {
+    background-image: url(https://i.imgur.com/IGI6Ec1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: url("#turbulence");
+    opacity: 0.7;
+    width: 105%;
+    height: 105%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1.5vh;
+    top: -2vh;
+}
+#fire-bg {
+    background-image: url(https://i.imgur.com/0vyYBDd.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: url("#turbulence");
+    opacity: 0.7;
+    width: 105%;
+    height: 105%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1.5vh;
+    top: -2vh;
+}
+#metal-bg {
+    background-image: url(https://i.imgur.com/eT4eGV0.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: url("#turbulence");
+    opacity: 0.7;
+    width: 105%;
+    height: 105%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1.5vh;
+    top: -2vh;
+}
+
+/*Small name*/
+/*Small name*/
+/*Small name*/
+/*Small name*/
+/*Small name*/
+.small-name-title {
+    position: fixed;
+    font-family: Abel;
+    font-size: 5vh;
+    font-style: italic;
+    right: 0;
+    bottom: 0;
+    margin: 0 6vh 4vh 0;
+    padding: 0vh;
+    height: 3vh;
+    width: 15vh;
+    height: 7vh;
+    cursor: context-menu;
+    transition: 0.5s;
+    text-align: right;
+}
+.small-name-title:hover {
+   letter-spacing: 1.5vh;
+   font-size: 6vh;
+   width: 30vh;
+   font-weight: bolder;
+}
+
+.inspired {
+    position: fixed;
+    font-family: Abel;
+    font-size: 2vh;
+    font-style: italic;
+    left: 2vh;
+    bottom: 0;
+    margin: 0 6vh 2vh 0;
+    padding: 0vh;
+    height: 1vh;
+    width: 20vh;
+    height: 7vh;
+    transition: 0.5s;
+    text-align: right;
+    cursor: context-menu;
+}
+
+/*des cais rau ria*/
+/*des cais rau ria*/
+/*des cais rau ria*/
+/*des cais rau ria*/
+/*des cais rau ria*/
+/*des cais rau ria*/
+.stick {
+    padding: 0;
+    margin: 0;
+    width: 28vh;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    top: 50vh;
+    left: 65vh;
+    cursor: context-menu;
+}
+
+.explore {
+    padding: 0;
+    margin: 0;
+    width: 10vh;
+    height: 4vh;
+    position: absolute;
+    top: 0vh;
+    font-family: Abel;
+    font-weight: bold;
+    font-size: 3vh;
+    top: 48.5vh;
+    left: 95vh;
+    overflow: hidden;
+    cursor: context-menu;
+}
+.explore-number {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+}
+.explore-text {
+    margin: 10 0 0 0;
+    padding: 0;
+    position: absolute;
+    top: 1vh;
+}
+
+/*CÁI NÀY LÀ DES Bottom*/
+/*CÁI NÀY LÀ DES Bottom*/
+/*CÁI NÀY LÀ DES Bottom*/
+/*CÁI NÀY LÀ DES Bottom*/
+/*CÁI NÀY LÀ DES Bottom*/
+/*CÁI NÀY LÀ DES Bottom*/
+.bottom {
+    padding: 0;
+    margin: 0vh;
+    height: 0vh;
+    width: 100vw;
+    bottom: 0;
+    position: fixed;
+    background-color: #E1E1E1;
+    overflow: hidden;
+    z-index: 200;
+}
+#getintouch {
+    height: 24vh;
+    width: 130vh;
+    padding: 0;
+    margin: 0 0 0 0;
+    position: relative;
+    top: 20vh;
+    left: 30vh;
+    font-size: 24vh;
+    font-family: Advent Pro;
+    font-weight: bold;
+    cursor: context-menu;
+}
+
+/*CÁI NÀY LÀ DES Mail cacs thuws*/
+/*CÁI NÀY LÀ DES Mail cacs thuws*/
+/*CÁI NÀY LÀ DES Mail cacs thuws*/
+/*CÁI NÀY LÀ DES Mail cacs thuws*/
+/*CÁI NÀY LÀ DES Mail cacs thuws*/
+/*CÁI NÀY LÀ DES Mail cacs thuws*/
+.contact-info {
+    padding: 0;
+    margin: 0;
+    background-color: none;
+    height: 35vh;
+    width: 55vh;
+    text-align: left;
+    position: relative;
+    top: 35vh;
+    left: 25vh;
+}
+.contact-info-element {
+    padding: 0;
+    height: auto;
+    margin: 1vh 0 0 0;
+    font-size: 3vh;
+    font-family: Abel;
+    cursor: pointer;
+    position: relative;
+}
+.contact-info-element:after {    
+    background: none repeat scroll 0 0;
+    bottom: 0px;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 100%;
+    position: absolute;
+    background: black;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+.contact-info-element:hover:after { 
+    width: 100%; 
+    left: 0%; 
+}
+#online {
+    font-weight: bolder;
+    cursor: context-menu;
+    padding: 0;
+    margin: 0;
+    font-size: 3vh;
+    font-family: Abel;
+    position: relative;
+    text-decoration-color: black;
+}
+#mail-bottom {
+    width: 51vh;
+}
+#facebook {
+    width: 12.5vh;
+}
+#instagram {
+    width: 13vh;
+}
+#twitter {
+    width: 9vh;
+}
+#youtube {
+    width: 10.5vh;
+}
+#phone {
+    width: 33.5vh;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+/*CÁI NÀY LÀ DES currently cacs thuws*/
+/*CÁI NÀY LÀ DES currently cacs thuws*/
+/*CÁI NÀY LÀ DES currently cacs thuws*/
+/*CÁI NÀY LÀ DES currently cacs thuws*/
+/*CÁI NÀY LÀ DES currently cacs thuws*/
+/*CÁI NÀY LÀ DES currently cacs thuws*/
+
+.contact-place {
+    padding: 0;
+    background-color: none;
+    height: 20vh;
+    width: 55vh;
+    text-align: right;
+    position: relative;
+    top: 0vh;
+    left: 80vh;
+    cursor: context-menu;
+}
+.contact-place-element {
+    padding: 0;
+    margin: 0;
+    font-size: 3vh;
+    font-family: Abel;
+    margin: 1vh 0 0 0;
+}
+
+
+#currently {
+    font-weight: bolder;
+    margin: 0;
+    
+}
+
+/*CÁI NÀY LÀ exit*/
+/*CÁI NÀY LÀ exit*/
+/*CÁI NÀY LÀ exit*/
+/*CÁI NÀY LÀ exit*/
+/*CÁI NÀY LÀ exit*/
+/*CÁI NÀY LÀ exit*/
+#exit {
+    position: relative;
+    top: -65vh;
+    left: 90vw;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    width: 8vh;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8vh;
+    transform-origin: 50% 50%;
+}
+
+#iconexit {
+    transition: 0.4s;
+    width: 8vh;
+    height: 8vh;
+    transform-origin: 50% 50%;
+}
+
+#iconexit:hover {
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+
+
+/* Des AIRPLANE -------------------------------------------------------------------> */
+
+#target {
+    top: 50vh;
+    left: -15vh;
+    
+    width: 100%;
+    display: flex;
+    position: absolute;
+    /* background-color: #000000; */
+}
+
+#plane {
+    height: 15vh;
+    width: 15vh;
+    z-index: 100000;
+}
+
+#trigger {
+    top: 20vh;
+    width: 100vw;
+    display: flex;
+    position: absolute;
+}

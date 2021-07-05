@@ -1,0 +1,2314 @@
+html, body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    overflow-x: hidden;
+    justify-content: center;
+}
+
+body {
+    background: #fff;
+    color: 333;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 860px) {
+body {
+    background: #e7e7e7;
+    }
+}
+/*CÁI NÀY LÀ DES HEADER*/
+/*CÁI NÀY LÀ DES HEADER*/
+/*CÁI NÀY LÀ DES HEADER*/
+/*CÁI NÀY LÀ DES HEADER*/
+/*CÁI NÀY LÀ DES HEADER*/
+/*CÁI NÀY LÀ DES HEADER*/
+.header {
+    position: fixed;
+    top: 0vh;
+    height: 10vh;
+    width: 98vw;
+    display: flex;
+    margin: 2vh 1vw 0 1vw;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 3000;
+    background-color: white;
+}
+
+#header-home {
+    border: solid 3px black;
+    display: flex;
+}
+
+.header-button-home {
+    width: 13vh;
+    height: 5vh;
+    color: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 0 2vh 0 2vh;
+    font-size: 3vh;
+    font-family: Abel;
+    position: relative;
+}
+
+@keyframes rotateicon {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#logo-text-home {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    top: 6.3vh;
+    left: 4.4vw;
+    font-size: 3vh;
+    font-family: Abel;
+    color: black;
+    cursor: pointer;
+}
+#logo-home{
+    height: 6.5vh;
+    width: auto;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    left: 5.1vw;
+    top: 0.5vh;
+    cursor: pointer;
+}
+.header-logo:hover {
+    animation: rotateicon 0.7s;
+}
+
+#changecolor {
+    position: absolute;
+    height: 10vh;
+    width: 0vw;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background-color: #e2e2e2;
+}
+
+.fake-border-up{
+    position: absolute;
+    top: 0vh;
+    left: 0;
+    height: 2px;
+    width: 0vh;
+    background-color: black;
+}
+.fake-border-bottom{
+    position: absolute;
+    bottom: 0vh;
+    right: 0;
+    height: 2px;
+    width: 0vh;
+    background-color: black;
+}
+.fake-border-sideleft{
+    position: absolute;
+    top: 0vh;
+    left: 0;
+    height: 0;
+    width: 2px;
+    background-color: black;
+}
+.fake-border-sideright{
+    position: absolute;
+    bottom: 0vh;
+    right: 0;
+    height: 0;
+    width: 2px;
+    background-color: black;
+}
+
+/*CÁI NÀY LÀ DES Bottom*/
+/*CÁI NÀY LÀ DES Bottom*/
+/*CÁI NÀY LÀ DES Bottom*/
+/*CÁI NÀY LÀ DES Bottom*/
+/*CÁI NÀY LÀ DES Bottom*/
+/*CÁI NÀY LÀ DES Bottom*/
+.bottom {
+    padding: 0;
+    margin: 0vh;
+    height: 0vh;
+    width: 100vw;
+    bottom: 0;
+    position: fixed;
+    background-color: #E1E1E1;
+    overflow: hidden;
+    z-index: 2000;
+}
+#getintouch {
+    height: 24vh;
+    width: 130vh;
+    padding: 0;
+    margin: 0 0 0 0;
+    position: relative;
+    top: 20vh;
+    left: 30vh;
+    font-size: 24vh;
+    font-family: Advent Pro;
+    font-weight: bold;
+    cursor: context-menu;
+}
+
+/*CÁI NÀY LÀ DES Mail cacs thuws*/
+/*CÁI NÀY LÀ DES Mail cacs thuws*/
+/*CÁI NÀY LÀ DES Mail cacs thuws*/
+/*CÁI NÀY LÀ DES Mail cacs thuws*/
+/*CÁI NÀY LÀ DES Mail cacs thuws*/
+/*CÁI NÀY LÀ DES Mail cacs thuws*/
+.contact-info {
+    padding: 0;
+    margin: 0;
+    background-color: none;
+    height: 35vh;
+    width: 55vh;
+    text-align: left;
+    position: relative;
+    top: 35vh;
+    left: 25vh;
+}
+.contact-info-element {
+    padding: 0;
+    height: auto;
+    margin: 1vh 0 0 0;
+    font-size: 3vh;
+    font-family: Abel;
+    cursor: pointer;
+    position: relative;
+}
+.contact-info-element:after {    
+    background: none repeat scroll 0 0;
+    bottom: 0px;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 100%;
+    position: absolute;
+    background: black;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+.contact-info-element:hover:after { 
+    width: 100%; 
+    left: 0%; 
+}
+#online {
+    font-weight: bolder;
+    cursor: context-menu;
+    padding: 0;
+    margin: 0;
+    font-size: 3vh;
+    font-family: Abel;
+    position: relative;
+    text-decoration-color: black;
+}
+#mail-bottom {
+    width: 51vh;
+}
+#facebook {
+    width: 12.5vh;
+}
+#instagram {
+    width: 13vh;
+}
+#twitter {
+    width: 9vh;
+}
+#youtube {
+    width: 10.5vh;
+}
+#phone {
+    width: 33.5vh;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+/*CÁI NÀY LÀ DES currently cacs thuws*/
+/*CÁI NÀY LÀ DES currently cacs thuws*/
+/*CÁI NÀY LÀ DES currently cacs thuws*/
+/*CÁI NÀY LÀ DES currently cacs thuws*/
+/*CÁI NÀY LÀ DES currently cacs thuws*/
+/*CÁI NÀY LÀ DES currently cacs thuws*/
+
+.contact-place {
+    padding: 0;
+    background-color: none;
+    height: 20vh;
+    width: 55vh;
+    text-align: right;
+    position: relative;
+    top: 0vh;
+    left: 80vh;
+    cursor: context-menu;
+}
+.contact-place-element {
+    padding: 0;
+    margin: 0;
+    font-size: 3vh;
+    font-family: Abel;
+    margin: 1vh 0 0 0;
+}
+
+
+#currently {
+    font-weight: bolder;
+    margin: 0;
+    
+}
+
+/*CÁI NÀY LÀ exit*/
+/*CÁI NÀY LÀ exit*/
+/*CÁI NÀY LÀ exit*/
+/*CÁI NÀY LÀ exit*/
+/*CÁI NÀY LÀ exit*/
+/*CÁI NÀY LÀ exit*/
+#exit {
+    position: relative;
+    top: -65vh;
+    left: 90vw;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    width: 8vh;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8vh;
+    transform-origin: 50% 50%;
+}
+
+#iconexit {
+    transition: 0.4s;
+    width: 8vh;
+    height: 8vh;
+    transform-origin: 50% 50%;
+}
+
+#iconexit:hover {
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+
+/*Cái này des table nhé
+Cái này des table nhé
+Cái này des table nhé
+Cái này des table nhé
+Cái này des table nhé
+Cái này des table nhé*/
+#table {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 545vh;
+    top: 65vh;
+    position: absolute;
+    overflow: hidden;
+    border-spacing: 0vh;
+    background: black;
+    border: none;
+    opacity: 0;
+    display: none;
+}
+
+table, td, th{
+    border: white 2.5vh solid;
+    overflow: hidden;
+}
+
+/*cái này des title
+cái này des title
+cái này des title
+cái này des title
+cái này des title
+cái này des title*/
+@keyframes rotateicon {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#hide{
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    height: 40vh;
+    width: 85vw;
+    right: 0vw;
+    background-color: white;
+    z-index: 1000;
+    top: 50vh;
+}
+#animation-ball-2 {
+    position: absolute;
+    z-index: 1000;
+    height: 23vh;
+    width: 23vh;
+    background-image: url(ball.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    top: 43vh;
+    left: 10vw;
+    animation: rotateicon 0.7s infinite linear;
+    cursor: pointer;
+}
+#click {
+    display: flex;
+    position: absolute;
+    width: 10vh;
+    height: 3vh;
+    border: none;
+    text-align: center;
+    font-family: Abel;
+    font-weight: bold;
+    font-size: 3vh;
+    top: 45vh;
+    left: 40vh;
+    cursor: context-menu;
+    opacity: 1;
+}
+
+#subtitle{
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    height: 9vh;
+    width: 65vh;
+    text-align: center;
+    top: 50vh;
+    font-size: 7.5vh;
+    font-family: Abel;
+    font-weight: 30vh;
+    cursor: context-menu;
+    transition: 0.5s;
+}
+#subtitle:hover{
+    width: 95vh;
+    letter-spacing: 1.5vh;
+    font-weight: 100vh;
+}
+.subtitle:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0vh;
+    content: "";
+    display: block;
+    height: 3px;
+    left: 50%;
+    position: absolute;
+    background: black;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+.subtitle:hover:after { 
+    width: 100%; 
+    left: 0%;
+}
+
+/*Des quar bongs
+Des quar bongs
+Des quar bongs
+Des quar bongs
+Des quar bongs
+Des quar bongs*/
+
+@keyframes bounce {
+    0% {
+        top: -1vh;
+        -webkit-animation-timing-function: ease-in;
+    }
+    10% {
+        top: 37vh;
+        -webkit-animation-timing-function: ease-out;
+    }
+    20% {
+        top: 6vh;
+        -webkit-animation-timing-function: ease-in;
+    }
+    30% {
+        top: 37vh;
+        -webkit-animation-timing-function: ease-out;
+    }
+    40% {
+        top: 12vh;
+        -webkit-animation-timing-function: ease-in;
+    }
+    50% {
+        top: 37vh;
+        -webkit-animation-timing-function: ease-out;
+    }
+    60% {
+        top: 18vh;
+        -webkit-animation-timing-function: ease-in;
+    }
+    70% {
+        top: 37vh;
+        -webkit-animation-timing-function: ease-out;
+    }
+    80% {
+        top: 24vh;
+        -webkit-animation-timing-function: ease-in;
+    }
+    90% {
+        top: 37vh;
+        -webkit-animation-timing-function: ease-out;
+    }
+    100% {
+        top: 30vh;
+        -webkit-animation-timing-function: ease-in;
+    }
+}
+    
+ @keyframes spin {
+    0% { 
+        transform: rotate(0deg); 
+    }
+    100% { 
+        transform: rotate(1200deg); 
+    }
+}
+    
+@keyframes movement {
+    0% {
+        left: -15vw;
+    }
+    80% {
+        left: 80vW;
+    }
+    100% {
+        left: 100vw;
+    }
+}
+
+#animation-ball-1 {
+    position: absolute;
+    z-index: 0;
+    height: 23vh;
+    width: 23vh;
+    background-image: url(ball.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: none;
+
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+    z-index: 1500;
+    animation-delay: 1s;
+    animation: spin 3.5s linear infinite, bounce 3.5s linear infinite, movement 3.5s linear infinite;
+}
+
+
+
+
+/* Cái này des ảnh
+Cái này des ảnh
+Cái này des ảnh
+Cái này des ảnh
+Cái này des ảnh */
+
+#imgctn1 {
+    background-image: url(https://i.imgur.com/IdJ00PS.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn1:hover {
+    background-size: 110%;
+}
+
+#imgctn2 {
+    background-image: url(https://i.imgur.com/pi26YBH.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn2:hover {
+    background-size: 110%;
+}
+
+#imgctn3 {
+    background-image: url(https://i.imgur.com/DJhGMsw.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn3:hover {
+    background-size: 110%;
+}
+
+#imgctn4 {
+    background-image: url(https://i.imgur.com/3JqW4Mp.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn4:hover {
+    background-size: 110%;
+}
+
+#imgctn5 {
+    background-image: url(https://i.imgur.com/vDsYvAw.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn5:hover {
+    background-size: 110%;
+}
+
+#imgctn6 {
+    background-image: url(https://i.imgur.com/z5Q7LO5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn6:hover {
+    background-size: 110%;
+}
+
+#imgctn7 {
+    background-image: url(https://i.imgur.com/AAkqGHJ.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn7:hover {
+    background-size: 110%;
+}
+
+#imgctn8 {
+    background-image: url(https://i.imgur.com/zWWT4ha.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn8:hover {
+    background-size: 110%;
+}
+
+#imgctn9 {
+    background-image: url(https://i.imgur.com/hSpeAnV.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn9:hover {
+    background-size: 110%;
+}
+
+#imgctn10 {
+    background-image: url(https://i.imgur.com/PSgTpxT.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn10:hover {
+    background-size: 110%;
+}
+
+#imgctn11 {
+    background-image: url(https://i.imgur.com/AAkqGHJ.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn11:hover {
+    background-size: 110%;
+}
+
+#imgctn12 {
+    background-image: url(https://i.imgur.com/3xKjmQZ.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn2:hover {
+    background-size: 110%;
+}
+
+#imgctn13 {
+    background-image: url(https://i.imgur.com/3xKjmQZ.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn13:hover {
+    background-size: 110%;
+}
+
+#imgctn14 {
+    background-image: url(https://i.imgur.com/3xKjmQZ.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn14:hover {
+    background-size: 110%;
+}
+
+#imgctn15 {
+    background-image: url(https://i.imgur.com/3xKjmQZ.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn15:hover {
+    background-size: 110%;
+}
+
+#imgctn16 {
+    background-image: url(https://i.imgur.com/4whEoQC.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn16:hover {
+    background-size: 110%;
+}
+
+#imgctn17 {
+    background-image: url(https://i.imgur.com/3xKjmQZ.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn17:hover {
+    background-size: 110%;
+}
+
+#imgctn18 {
+    background-image: url(https://i.imgur.com/3xKjmQZ.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn18:hover {
+    background-size: 110%;
+}
+
+#imgctn19 {
+    background-image: url(https://i.imgur.com/3xKjmQZ.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn19:hover {
+    background-size: 110%;
+}
+
+
+#imgctn20 {
+    background-image: url(https://i.imgur.com/4whEoQC.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn20:hover {
+    background-size: 110%;
+}
+
+#imgctn21 {
+    background-image: url(https://i.imgur.com/4whEoQC.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn21:hover {
+    background-size: 110%;
+}
+
+#imgctn22 {
+    background-image: url(https://i.imgur.com/3xKjmQZ.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn22:hover {
+    background-size: 110%;
+}
+
+#imgctn23 {
+    background-image: url(https://i.imgur.com/3xKjmQZ.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn23:hover {
+    background-size: 110%;
+}
+
+#imgctn24 {
+    background-image: url(https://i.imgur.com/3xKjmQZ.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn24:hover {
+    background-size: 110%;
+}
+
+#imgctn25 {
+    background-image: url(https://i.imgur.com/3xKjmQZ.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn25:hover {
+    background-size: 110%;
+}
+
+#imgctn26 {
+    background-image: url(https://i.imgur.com/4whEoQC.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn26:hover {
+    background-size: 110%;
+}
+
+#imgctn27 {
+    background-image: url(https://i.imgur.com/3xKjmQZ.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn27:hover {
+    background-size: 110%;
+}
+
+#imgctn28 {
+    background-image: url(https://i.imgur.com/3xKjmQZ.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn28:hover {
+    background-size: 110%;
+}
+
+#imgctn29 {
+    background-image: url(https://i.imgur.com/3xKjmQZ.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn29:hover {
+    background-size: 110%;
+}
+
+#imgctn30 {
+    background-image: url(https://i.imgur.com/4whEoQC.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn30:hover {
+    background-size: 110%;
+}
+
+#imgctn31 {
+    background-image: url(https://i.imgur.com/4whEoQC.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn31:hover {
+    background-size: 110%;
+}
+
+#imgctn32 {
+    background-image: url(https://i.imgur.com/3xKjmQZ.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn32:hover {
+    background-size: 110%;
+}
+
+#imgctn33 {
+    background-image: url(https://i.imgur.com/3xKjmQZ.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn33:hover {
+    background-size: 110%;
+}
+
+#imgctn34 {
+    background-image: url(https://i.imgur.com/3xKjmQZ.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn34:hover {
+    background-size: 110%;
+}
+
+#imgctn35 {
+    background-image: url(https://i.imgur.com/3xKjmQZ.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn35:hover {
+    background-size: 110%;
+}
+
+#imgctn36 {
+    background-image: url(https://i.imgur.com/4whEoQC.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn36:hover {
+    background-size: 110%;
+}
+
+#imgctn37 {
+    background-image: url(https://i.imgur.com/3xKjmQZ.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn37:hover {
+    background-size: 110%;
+}
+
+#imgctn38 {
+    background-image: url(https://i.imgur.com/3xKjmQZ.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn38:hover {
+    background-size: 110%;
+}
+
+#imgctn39 {
+    background-image: url(https://i.imgur.com/3xKjmQZ.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn39:hover {
+    background-size: 110%;
+}
+
+#imgctn40 {
+    background-image: url(https://i.imgur.com/4whEoQC.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn40:hover {
+    background-size: 110%;
+}
+
+#imgctn41 {
+    background-image: url(https://i.imgur.com/4whEoQC.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn41:hover {
+    background-size: 110%;
+}
+
+#imgctn42 {
+    background-image: url(https://i.imgur.com/3xKjmQZ.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn42:hover {
+    background-size: 110%;
+}
+
+#imgctn43 {
+    background-image: url(https://i.imgur.com/3xKjmQZ.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn43:hover {
+    background-size: 110%;
+}
+
+#imgctn44 {
+    background-image: url(https://i.imgur.com/3xKjmQZ.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn44:hover {
+    background-size: 110%;
+}
+
+#imgctn45 {
+    background-image: url(https://i.imgur.com/3xKjmQZ.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn45:hover {
+    background-size: 110%;
+}
+
+#imgctn46 {
+    background-image: url(https://i.imgur.com/4whEoQC.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn46:hover {
+    background-size: 110%;
+}
+
+#imgctn47 {
+    background-image: url(https://i.imgur.com/3xKjmQZ.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn47:hover {
+    background-size: 110%;
+}
+
+#imgctn48 {
+    background-image: url(https://i.imgur.com/3xKjmQZ.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn48:hover {
+    background-size: 110%;
+}
+
+#imgctn49 {
+    background-image: url(https://i.imgur.com/3xKjmQZ.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn49:hover {
+    background-size: 110%;
+}
+
+#imgctn50 {
+    background-image: url(https://i.imgur.com/4whEoQC.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn50:hover {
+    background-size: 110%;
+}
+
+#imgctn51 {
+    background-image: url(https://i.imgur.com/4whEoQC.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn51:hover {
+    background-size: 110%;
+}
+
+#imgctn52 {
+    background-image: url(https://i.imgur.com/3xKjmQZ.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn52:hover {
+    background-size: 110%;
+}
+
+#imgctn53 {
+    background-image: url(https://i.imgur.com/3xKjmQZ.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn53:hover {
+    background-size: 110%;
+}
+
+#imgctn54 {
+    background-image: url(https://i.imgur.com/3xKjmQZ.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn54:hover {
+    background-size: 110%;
+}
+
+#imgctn55 {
+    background-image: url(https://i.imgur.com/3xKjmQZ.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn55:hover {
+    background-size: 110%;
+}
+
+#imgctn56 {
+    background-image: url(https://i.imgur.com/4whEoQC.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn56:hover {
+    background-size: 110%;
+}
+
+#imgctn57 {
+    background-image: url(https://i.imgur.com/3xKjmQZ.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn57:hover {
+    background-size: 110%;
+}
+
+#imgctn58 {
+    background-image: url(https://i.imgur.com/3xKjmQZ.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn58:hover {
+    background-size: 110%;
+}
+
+#imgctn59 {
+    background-image: url(https://i.imgur.com/3xKjmQZ.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn59:hover {
+    background-size: 110%;
+}
+
+#imgctn60 {
+    background-image: url(https://i.imgur.com/4whEoQC.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn60:hover {
+    background-size: 110%;
+}
+
+#imgctn61 {
+    background-image: url(https://i.imgur.com/4whEoQC.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn61:hover {
+    background-size: 110%;
+}
+
+#imgctn62 {
+    background-image: url(https://i.imgur.com/3xKjmQZ.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn62:hover {
+    background-size: 110%;
+}
+
+#imgctn63 {
+    background-image: url(https://i.imgur.com/3xKjmQZ.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn63:hover {
+    background-size: 110%;
+}
+
+#imgctn64 {
+    background-image: url(https://i.imgur.com/3xKjmQZ.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn64:hover {
+    background-size: 110%;
+}
+
+#imgctn65 {
+    background-image: url(https://i.imgur.com/3xKjmQZ.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn65:hover {
+    background-size: 110%;
+}
+
+#imgctn66 {
+    background-image: url(https://i.imgur.com/4whEoQC.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn66:hover {
+    background-size: 110%;
+}
+
+#imgctn67 {
+    background-image: url(https://i.imgur.com/3xKjmQZ.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgct67:hover {
+    background-size: 110%;
+}
+
+#imgctn68 {
+    background-image: url(https://i.imgur.com/3xKjmQZ.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn68:hover {
+    background-size: 110%;
+}
+
+#imgctn69 {
+    background-image: url(https://i.imgur.com/3xKjmQZ.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn6:hover {
+    background-size: 110%;
+}
+
+#imgctn70 {
+    background-image: url(https://i.imgur.com/4whEoQC.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn70:hover {
+    background-size: 110%;
+}
+
+#imgctn71 {
+    background-image: url(https://i.imgur.com/4whEoQC.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn71:hover {
+    background-size: 110%;
+}
+
+#imgctn72 {
+    background-image: url(https://i.imgur.com/3xKjmQZ.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn72:hover {
+    background-size: 110%;
+}
+
+#imgctn73 {
+    background-image: url(https://i.imgur.com/3xKjmQZ.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn73:hover {
+    background-size: 110%;
+}
+
+#imgctn74 {
+    background-image: url(https://i.imgur.com/3xKjmQZ.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn74:hover {
+    background-size: 110%;
+}
+
+#imgctn75 {
+    background-image: url(https://i.imgur.com/3xKjmQZ.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn75:hover {
+    background-size: 110%;
+}
+
+#imgctn76 {
+    background-image: url(https://i.imgur.com/4whEoQC.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn76:hover {
+    background-size: 110%;
+}
+
+#imgctn77 {
+    background-image: url(https://i.imgur.com/3xKjmQZ.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn77:hover {
+    background-size: 110%;
+}
+
+#imgctn78 {
+    background-image: url(https://i.imgur.com/3xKjmQZ.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn78:hover {
+    background-size: 110%;
+}
+
+#imgctn79 {
+    background-image: url(https://i.imgur.com/3xKjmQZ.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn79:hover {
+    background-size: 110%;
+}
+
+#imgctn80 {
+    background-image: url(https://i.imgur.com/4whEoQC.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn80:hover {
+    background-size: 110%;
+}
+
+#imgctn81 {
+    background-image: url(https://i.imgur.com/4whEoQC.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn81:hover {
+    background-size: 110%;
+}
+
+#imgctn82 {
+    background-image: url(https://i.imgur.com/3xKjmQZ.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn82:hover {
+    background-size: 110%;
+}
+
+#imgctn83 {
+    background-image: url(https://i.imgur.com/3xKjmQZ.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn83:hover {
+    background-size: 110%;
+}
+
+#imgctn84 {
+    background-image: url(https://i.imgur.com/3xKjmQZ.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn84:hover {
+    background-size: 110%;
+}
+
+#imgctn85 {
+    background-image: url(https://i.imgur.com/3xKjmQZ.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn5:hover {
+    background-size: 110%;
+}
+
+#imgctn86 {
+    background-image: url(https://i.imgur.com/4whEoQC.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn86:hover {
+    background-size: 110%;
+}
+
+#imgctn87 {
+    background-image: url(https://i.imgur.com/3xKjmQZ.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn87:hover {
+    background-size: 110%;
+}
+
+#imgctn88 {
+    background-image: url(https://i.imgur.com/3xKjmQZ.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn88:hover {
+    background-size: 110%;
+}
+
+#imgctn89 {
+    background-image: url(https://i.imgur.com/3xKjmQZ.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn89:hover {
+    background-size: 110%;
+}
+
+#imgctn90 {
+    background-image: url(https://i.imgur.com/IdJ00PS.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn90:hover {
+    background-size: 110%;
+}
+
+#imgctn91 {
+    background-image: url(https://i.imgur.com/IdJ00PS.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn91:hover {
+    background-size: 110%;
+}
+
+#imgctn92 {
+    background-image: url(https://i.imgur.com/pi26YBH.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn92:hover {
+    background-size: 110%;
+}
+
+#imgctn93 {
+    background-image: url(https://i.imgur.com/DJhGMsw.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn93:hover {
+    background-size: 110%;
+}
+
+#imgctn94 {
+    background-image: url(https://i.imgur.com/3JqW4Mp.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn94:hover {
+    background-size: 110%;
+}
+
+#imgctn95 {
+    background-image: url(https://i.imgur.com/vDsYvAw.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn95:hover {
+    background-size: 110%;
+}
+
+#imgctn96 {
+    background-image: url(https://i.imgur.com/z5Q7LO5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn96:hover {
+    background-size: 110%;
+}
+
+#imgctn97 {
+    background-image: url(https://i.imgur.com/AAkqGHJ.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn97:hover {
+    background-size: 110%;
+}
+
+#imgctn98 {
+    background-image: url(https://i.imgur.com/zWWT4ha.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn98:hover {
+    background-size: 110%;
+}
+
+#imgctn99 {
+    background-image: url(https://i.imgur.com/hSpeAnV.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 105%;
+    height: 105%;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -1vh;
+    top: -0.5vh;
+}
+#imgctn99:hover {
+    background-size: 110%;
+}
+
+.imagecontainer {
+    filter: url("#turbulence");
+}
